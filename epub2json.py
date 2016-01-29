@@ -78,6 +78,7 @@ def add_data_to_return(ret, id, item, encoded_data):
 
 if(args.zipfile):
     zip = ZipFile(args.zipfile, "w")
+
 manifest = book.opf.manifest
 for id in manifest:
     item = manifest[id]

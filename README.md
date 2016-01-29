@@ -41,3 +41,13 @@ Alternatively, pass the --binary-zip option to save non-text data in a separate 
 ```Shell
 epub2json.py georgia-cfi.epub georgia-cfi.json --binary-zip georgia-cfi.zip
 ```
+
+# Vagrant quickstart
+After install Vagrant (https://www.vagrantup.com/docs/installation/), clone this repo and run the following commands to set up and test:
+```shell
+vagrant up
+vagrant ssh
+https://github.com/pmstss/epub-books/blob/master/georgia-cfi.epub?raw=true
+/vagrant/epub2json.py georgia-cfi.epub georgia-cfi.json
+less georgia-cfi.json
+```
