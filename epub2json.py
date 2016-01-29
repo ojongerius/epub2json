@@ -62,7 +62,6 @@ final_return = OrderedDict()
 final_return["spine"] = OrderedDict()
 for itemref, linear in book.opf.spine.itemrefs:
     final_return["spine"][itemref] = linear
-    
 def add_data_to_return(ret, id, item, encoded_data):
     if(encoded_data):
         ret[id] = {

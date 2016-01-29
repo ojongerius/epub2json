@@ -47,7 +47,7 @@ After install Vagrant (https://www.vagrantup.com/docs/installation/), clone this
 ```shell
 vagrant up
 vagrant ssh
-https://github.com/pmstss/epub-books/blob/master/georgia-cfi.epub?raw=true
+wget https://github.com/pmstss/epub-books/blob/master/georgia-cfi.epub?raw=true -O georgia-cfi.epub
 /vagrant/epub2json.py georgia-cfi.epub georgia-cfi.json
 less georgia-cfi.json
 ```
